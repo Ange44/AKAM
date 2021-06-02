@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- stella-orre/blog-detail.html  30 Nov 2019 03:52:07 GMT -->
+<head>
+<meta charset="utf-8">
+<title>AKAM</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
+<link rel="stylesheet" href="style.css">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<script src="jss/JQuery3.3.1.js"></script>
+<script src="jss/lightslider.js"></script>
+<script src="jss/script.js"></script>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <header class="main-header header-style-one">
+        <!--Header Top-->
+        <div class="header-top">
+            <div class="auto-container clearfix">
+                <div class="top-left clearfix">
+                    <div class="text"><span class="icon flaticon-call-answer"></span> Appelez-nous : <a href="tel:+225 0707053111 " class="number">+225 0707053111/+225 0505079477  </a></div>
+					
+                </div>
+                <div class="top-right clearfix">
+                    <!-- Info List -->
+					<ul class="info-list">
+						
+                        <li><a href="about.html">Société</a></li>
+                        <li><a href="emploi.html">Emplois</a></li>
+                        <li><a href="blog.html">Actualités</a></li>
+						<li><a href="#">France (français)</a></li>
+						<li class="quote"><a href="javascript:void(0);" class="user">Connexion MyAKAM &nbsp;<i class="fa fa-user"></i></a></li>
+						<div class="form">
+							<!--login---------->
+							<div class="login-form">
+								<!--cancel-btn---------------->
+								<a href="javascript:void(0);" class="form-cancel">
+									<i class="fas fa-times"></i>
+								</a>
+								<strong>CONNEXION</strong>
+								<!--inputs-->
+								<form>
+									<input type="email" name="email" placeholder="Example@gmail.com" required/>
+									<input type="password" name="password" placeholder="Mot de passe" required/>
+									<input type="submit" value="Connexion"/>
+								</form>
+								<!--forget-and-sign-up-btn-->
+								<div class="form-btns">
+									<a href="#" class="forget">Mot de passe oublié?</a>
+									<a href="javascript:void(0);" class="sign-up-btn">Créé un compte</a>
+								</div>
+							</div>
+								<!--Sign-up---------->
+								<div class="sign-up-form">
+									<!--cancel-btn---------------->
+								<a href="javascript:void(0);" class="form-cancel">
+									<i class="fas fa-times"></i>
+								</a>
+									<strong>Inscription</strong>
+									<!--inputs-->
+									<form>
+										<input type="text" name="fullname" placeholder="Nom" required/>
+										<input type="email" name="email" placeholder="Example@gmail.com" required/>
+										<input type="password" name="password" placeholder="Mot de passe" required/>
+										<input type="submit" value="S'inscrire"/>
+									</form>
+									<!--forget-and-sign-up-btn-->
+									<div class="form-btns">
+										<a href="javascript:void(0);" class="already-account">
+											Avez vous déja un compte?</a>
+						
+									</div>
+								</div>
+						</div>
+						<script>
+							/*---For Login and Sign-up----------------------------*/
+							$(document).on('click','.user,.already-account',function(){
+							  $('.form').addClass('login-active').removeClass('sign-up-active')
+						  });
+					   
+						  $(document).on('click','.sign-up-btn',function(){
+							  $('.form').addClass('sign-up-active').removeClass('login-active')
+						  });
+					   
+						  $(document).on('click','.form-cancel',function(){
+							  $('.form').removeClass('login-active').removeClass('sign-up-active')
+						  });
+					  </script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Top -->
+
+        <!-- Header Upper -->
+        <div class="header-upper">
+            <div class="inner-container">
+                <div class="auto-container clearfix">
+                    <!--Info-->
+                    <div class="logo-outer">
+                        <div class="logo"><a href="index-2.html"><img src="images/bs.png" alt="" title=""></a></div>
+                    </div>
+
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <!--Mobile Navigation Toggler For Mobile--><div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="navbar-header">
+                                <!-- Togg le Button -->      
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon flaticon-menu-1"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="index.html" style="color: #004b8d;">Accueil</a>
+                                    </li>
+									<li class="dropdown"><a href="shop.html">Produits</a>
+										<ul>
+                                          
+
+											<li class="dropdown"><a href="shop1.html">Gestion équipements</a>
+                                                <ul>
+													<li><a href="#">Header Style One</a></li>
+                                                    <li><a href="#">Header Style Two</a></li>
+                                                    <li><a href="#">Header Style Three</a></li>
+													<li><a href="#">Header Style Four</a></li>
+                                                    <li><a href="#">Header Style Five</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="shop2.html">Instruments de mesure</a>
+                                                <ul>
+													<li><a href="#">Header Style One</a></li>
+                                                    <li><a href="#">Header Style Two</a></li>
+                                                    <li><a href="#">Header Style Three</a></li>
+													<li><a href="#">Header Style Four</a></li>
+                                                    <li><a href="#">Header Style Five</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+										<li class="dropdown"><a href="log.html">Logiciels</a>
+										<ul>
+                                          
+
+											<li class="dropdown"><a href="log1.html">Gestion équipements</a>
+                                                <ul>
+                                                    <li><a href="#">Header Style One</a></li>
+                                                    <li><a href="#">Header Style Two</a></li>
+                                                    <li><a href="#">Header Style Three</a></li>
+													<li><a href="#">Header Style Four</a></li>
+                                                    <li><a href="#">Header Style Five</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="log2.html">Instruments de mesure</a>
+                                                <ul>
+                                                    <li><a href="#">Header Style One</a></li>
+                                                    <li><a href="#">Header Style Two</a></li>
+                                                    <li><a href="#">Header Style Three</a></li>
+													<li><a href="#">Header Style Four</a></li>
+                                                    <li><a href="#">Header Style Five</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="index.html#id1">Services</a>
+                                        <ul>
+                                            <li><a href="formation.html">Services de formation</a></li>
+                                            <li><a href="office-interior.html">Services de consulting</a></li>
+                                            <li><a href="expertise.html">Services d' expertise</a></li>
+
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Industries</a>
+                                        <ul>
+                                            <li><a href="ind.html">Bâtiments - construction</a></li>
+                                        </ul>
+                                    </li>
+							
+									<li class="dropdown"><a href="outils.html">Outils</a>
+                                     <!--    <ul>
+                                            <li><a href="shop.html">Calculateur de débit</a></li>
+                                            <li><a href="product-detail.html">Configurateur TopWorx</a></li>
+                                          
+                                        </ul> -->
+                                    </li>
+									<li class="dropdown"><a href="contact.html">Contact</a>
+                                    </li>
+
+                                    <li><a href="contact.html"><p style="visibility	: hidden;">aaaaaa</p></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+						
+						<!-- Outer Box -->
+                        <div class="outer-box clearfix">
+						<!--  <div class="search-box-btn"><span class="icon flaticon-shopping-cart"></span></div> -->
+							<div class="search-box-btn"><span style="color: #004b8d;">Rechercher</span><span class="icon flaticon-magnifying-glass-1"></span></div>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+
+    	<!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index-2.html"><img src="images/ds.png" alt="" title=""></a></div>
+                <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
+				<!--Social Links-->
+				<div class="social-links">
+					<ul class="clearfix">
+						<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+						<li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+						<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+						<li><a href="#"><span class="fab fa-youtube"></span></a></li>
+					</ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+    </header>
+    <!-- End Main Header -->
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/resource/acc.jpg)">
+    	<div class="auto-container">
+        	<h2>Blog Details</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="index-2.html">Accueil</a></li>
+                <li>Blog Details</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side / Blog Classic -->
+                <div class="content-side col-xl-9 col-lg-8 col-md-12 col-sm-12">
+                	<div class="blog-single padding-right">
+						<div class="inner-box">
+							<div class="image-box">
+                                <figure class="image"><img src="images/resource/3.png" alt=""></figure>
+                                <span class="date">9 mai 2021</span>
+                            </div>
+                            <div class="lower-content">
+                                <div class="post-meta">
+                                    <ul class="post-info clearfix">
+                                        <li><a href="blog-detail.html">By : admin</a></li>
+                                        <li><a href="blog-detail.html">furniture</a></li>
+                                        <li><a href="blog-detail.html">Commentaire: 8</a></li>
+                                    </ul>
+                                </div>
+								<div class="lower-box">
+									<h3>La nouvelle vanne à guillotine réduit le coût total de possession dans les applications sévères d’effluents boueux</h3>
+									<div class="text">
+										<p>La vanne à guillotine ClarksonTM KS1 d’AKAM est une véritable vanne bidirectionnelle, à passage intégral, ASME classe 150, conçue pour maîtriser les contraintes générées par les effluents boueux épais. Son système d’étanchéité perfectionné et breveté garantit un isolement zéro-fuite dans le temps, permettant d’augmenter la durée de fonctionnement et le débit.</h4>
+									
+										<p>La nouvelle vanne à guillotine est dotée, d’un joint d’opercule breveté qui forme un système d’étanchéité continu autour de l’opercule, et d’un siège en élastomère moulé avec précision. Ce siège robuste augmente la zone de contact et la capacité d’étanchéité élastique de la vanne par rapport aux conceptions de joints toriques standard, ce qui se traduit par des performances d’isolation supérieures sur un cycle de vie prolongé.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        
+                    	
+                        <!--Comments Area-->
+                        <div class="comments-area">
+                            <div class="group-title"><h2>Comments 4</h2></div>
+                            <div class="inner-box">
+                                <!--Comment Box-->
+                                <div class="comment-box">
+                                    <div class="comment">
+                                        <div class="author-thumb"><img src="images/resource/author-1.jpg" alt=""></div>
+                                        <div class="comment-inner">
+                                            <div class="comment-info clearfix"><strong>Sarah john</strong></div>
+                                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</div>
+                                            <ul class="post-info">
+                                                <li>08 Feb, 2019</li>
+                                                <li><a href="#">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Comment Box-->
+                                <div class="comment-box">
+                                    <div class="comment">
+                                        <div class="author-thumb"><img src="images/resource/author-2.jpg" alt=""></div>
+                                        <div class="comment-inner">
+                                            <div class="comment-info clearfix"><strong>Robert john</strong></div>
+                                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</div>
+                                            <ul class="post-info">
+                                                <li>08 Feb, 2019</li>
+                                                <li><a href="#">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Comment Box-->
+                                <div class="comment-box">
+                                    <div class="comment">
+                                        <div class="author-thumb"><img src="images/resource/author-1.jpg" alt=""></div>
+                                        <div class="comment-inner">
+                                            <div class="comment-info clearfix"><strong>Sarah john</strong></div>
+                                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</div>
+                                            <ul class="post-info">
+                                                <li>08 Feb, 2019</li>
+                                                <li><a href="#">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="comment reply-comment">
+                                        <div class="author-thumb"><img src="images/resource/author-2.jpg" alt=""></div>
+                                        <div class="comment-inner">
+                                            <div class="comment-info clearfix"><strong>Robert john</strong></div>
+                                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</div>
+                                            <ul class="post-info">
+                                                <li>08 Feb, 2019</li>
+                                                <li><a href="#">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <!--Comment Box-->
+                                <div class="comment-box">
+                                    <div class="comment">
+                                        <div class="author-thumb"><img src="images/resource/author-1.jpg" alt=""></div>
+                                        <div class="comment-inner">
+                                            <div class="comment-info clearfix"><strong>Sarah john</strong></div>
+                                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps.</div>
+                                            <ul class="post-info">
+                                                <li>08 Feb, 2019</li>
+                                                <li><a href="#">Reply</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Comment Form -->
+                        <div class="comment-form">
+                                
+                            <div class="group-title"><h2>Leave a Comment</h2></div>
+                            <div class="form-inner">
+                                <!--Comment Form-->
+                                <form method="post" action="http://t.commonsupport.com/stella-orre/blog.html">
+                                    <div class="row clearfix">
+                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                            <input type="text" name="username" placeholder="Your name" required>
+                                        </div>
+                                        
+                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                            <input type="email" name="email" placeholder="Email address" required>
+                                        </div>
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                            <textarea name="message" placeholder="Write message"></textarea>
+                                        </div>
+                                        
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                            <button class="theme-btn submit-btn" type="submit" name="submit-form">Post Comment</button>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--End Comment Form -->
+                        
+                    </div>
+				</div>
+				
+				<!--Sidebar Side-->
+                <div class="sidebar-side col-xl-3 col-lg-4 col-md-12 col-sm-12">
+					<aside class="sidebar">
+						
+						<!-- Search -->
+                        <div class="sidebar-widget search-box">
+                        	<form method="post" action="templateshub.net">
+                                <div class="form-group">
+                                    <input type="search" name="search-field" value="" placeholder="Entrer une recherche" required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+						</div>
+						
+						<!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h2>Catégories</h2>
+                            </div>
+                            <ul class="cat-list">
+                                <li><a href="#">Produits</a></li>
+                                <li><a href="#">Logiciels</a></li>
+                                <li><a href="#">Outils d'ingénierie</a></li>
+                                <li><a href="#">Industries</a></li>
+                                <li><a href="#">Services</a></li>
+                            </ul>
+                        </div>
+						
+						<!-- Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title"><h2>Nouvelles récentes</h2></div>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-detail.html"><img src="images/resource/post1.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-detail.html">Accrocher des fruits pour identifier une valeur ajoutée approximative...</a></div>
+                                <div class="post-info">12 Avril 2021</div>
+                            </article>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-detail.html"><img src="images/resource/post2.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-detail.html">Développer organiquement la vision du monde holistique ...</a></div>
+                                <div class="post-info">12 Avril 2021</div>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-detail.html"><img src="images/resource/post3.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-detail.html">Apportez à la table dans la survie gagnant-gagnant ...</a></div>
+                                <div class="post-info">12 Avril 2021</div>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="blog-detail.html"><img src="images/resource/post34.jpg" alt=""></a></figure>
+                                <div class="text"><a href="blog-detail.html">Remplacez la fracture numérique par des ...</a></div>
+                                <div class="post-info">12 Avril 2021</div>
+                            </article>
+
+                        </div>
+						
+						<!-- Popular Tags -->
+                        <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title"><h2>Tags</h2></div>
+                            <a href="#">Innovation</a>
+                            <a href="#">Logiciels</a>
+                            <a href="#">Designs</a>
+                            <a href="#">Produits</a>
+                            <a href="#">Matière</a>
+                        </div>
+						
+					</aside>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!--Main Footer-->
+    <footer class="main-footer">
+		<div class="auto-container">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!--big column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    </div>
+                             <div class="text">AKAM is a WordPress theme to build Interior websites. It has good features and you will love.</div>
+                                    <ul class="social-icons">
+                                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                                    </ul>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+                                	<h2>Quick links</h2>
+									<div class="widget-content">
+										<ul class="list">
+                                        	<li><a href="#">About Gaille</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditionis</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                        </ul>
+                                    </div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+					<!--big column-->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+                        
+                            <!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget contact-widget">
+									<h2>Contact Info</h2>
+									<div class="widget-content">
+										<a href="tel:1800-574-9687" class="contact-number">(1800) 574 9687</a>
+										<ul>
+											<li>256, AKAM, Abidjan 24</li>
+											<li>Email :<a href="mailto:info@stellaorre.com"> info@bruno.com</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget newsletter-widget">
+                                	<h2>Newsletter</h2>
+									<div class="text">Get Special offers & Discounts</div>
+									<!-- Newsletter Form -->
+									<div class="newsletter-form">
+										<form method="post" action="templateshub.net">
+											<div class="form-group">
+												<input type="email" name="email" value="" placeholder="Enter your email address" required>
+												<button type="submit" class="theme-btn btn-style-one"><span class="txt">Subscribe</span></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!--Footer Bottom-->
+            <div class="footer-bottom clearfix">
+                <div class="pull-left">
+                    <div class="copyright"><a href="templateshub.net">Templates Hub</a></div>
+                </div>
+                <div class="pull-right">
+                    <a href="templateshub.net">Templates Hub</a>
+                </div>
+            </div>
+			
+		</div>
+	</footer>
+	
+</div>  
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+	<div class="close-search theme-btn"><span class="flaticon-cancel"></span></div>
+	<div class="popup-inner">
+		<div class="overlay-layer"></div>
+    	<div class="search-form">
+        	<form method="post" action="templateshub.net">
+            	<div class="form-group">
+                	<fieldset>
+                        <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                        <input type="submit" value="Search Now!" class="theme-btn">
+                    </fieldset>
+                </div>
+            </form>
+            
+            <br>
+            <h3>Les recherches récentes</h3>
+            <ul class="recent-searches">
+                <li><a href="#">Solution d'automatisation</a></li>
+                <li><a href="#">Solution commerciales</a></li>
+                <li><a href="#">Solution résidentielles</a></li>
+                <li><a href="#">Produits et logiciels</a></li>
+            </ul>
+        
+        </div>
+        
+    </div>
+</div>
+
+<!--Scroll to top-->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+<!-- stella-orre/blog-detail.html  30 Nov 2019 03:52:07 GMT -->
+</html>
